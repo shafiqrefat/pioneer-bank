@@ -22,7 +22,7 @@
             <div class="col-md-4">
                 <div class="deposit status">
                     <h5>Deposit</h5>
-                    <h2>$ <span id="newDeposit">00</span></h2>
+                    <h2>$ <span id="currentDeposit">00</span></h2>
                 </div>
             </div>
             <div class="col-md-4">
@@ -71,7 +71,7 @@
             const depositNumber = getInputNumber("addAmount")
 
         updateSpanText("currentBalance" , depositNumber);
-        updateSpanText("newDeposit" , depositNumber);
+        updateSpanText("currentDeposit" , depositNumber);
 
         document.getElementById("addAmount").value = "";
         })
